@@ -23,7 +23,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
         }
     }
@@ -56,4 +56,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("androidx.navigation:navigation-compose:2.9.0")
+
+    implementation("io.insert-koin:koin-androidx-compose:3.4.5")
+    implementation("io.insert-koin:koin-android:3.4.1")
+    implementation("io.insert-koin:koin-core:3.4.1")
+    testImplementation("io.insert-koin:koin-test:3.4.1")
+    testImplementation("io.insert-koin:koin-test-junit4:4.0.0")
 }

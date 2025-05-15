@@ -1,0 +1,2 @@
+[*.{kt,kts}]
+ktlint_standard_ruleset_disabled = standard:no-wildcard-imports, standard:filename
