@@ -1,4 +1,4 @@
-package com.nicholas.rutherford.habit.vibes.quote.api.manager.ui.theme
+package com.nicholas.rutherford.habit.vibes.quote.api.manager.compose.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
