@@ -9,6 +9,7 @@
 /.idea/assetWizardSettings.xml
 ./DS_STORE
 /core/di/build
+/core/resources/build
 /compose/ui-theme/build
 /navigation/build
 /build

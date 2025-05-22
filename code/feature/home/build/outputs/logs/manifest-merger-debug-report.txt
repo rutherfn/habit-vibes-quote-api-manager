@@ -1,0 +1,15 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml:1:1-90
+INJECTED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml:1:1-90
+	package
+		ADDED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml:1:11-87
+		INJECTED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml
+INJECTED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/nicholasrutherford/Desktop/habit-vibes-quote-api-manager/code/feature/home/src/main/AndroidManifest.xml

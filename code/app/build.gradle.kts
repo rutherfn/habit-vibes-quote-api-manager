@@ -47,7 +47,6 @@ android {
 }
 
 dependencies {
-
     api(project(path = ":core:di"))
     api(project(path = ":compose:ui-theme"))
 

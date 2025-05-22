@@ -19,7 +19,9 @@ import androidx.navigation.compose.rememberNavController
 import java.util.Locale
 
 @Composable
-fun BottomNavigationBar(navController: NavHostController) {
+fun BottomNavigationBar(
+    navController: NavHostController
+) {
     var selectedItem by remember { mutableIntStateOf(0) }
     val items = listOf(Screen.Home, Screen.Settings)
     val icons = listOf(Icons.Filled.Home, Icons.Filled.Settings)
@@ -32,16 +34,16 @@ fun BottomNavigationBar(navController: NavHostController) {
 
             NavigationBarItem(
                 icon = {
-                    Icon(
-                        icons[index],
-                        contentDescription = item.route,
-                        tint =
-                        if (isSelected) {
-                            MaterialTheme.colorScheme.primary
-                        } else {
-                            MaterialTheme.colorScheme.secondary
-                        }
-                    )
+                        Icon(
+                            icons[index],
+                            contentDescription = item.route,
+                            tint =
+                                if (isSelected) {
+                                    MaterialTheme.colorScheme.primary
+                                } else {
+                                    MaterialTheme.colorScheme.secondary
+                                }
+                        )
                 },
                 label = {
                     Text(

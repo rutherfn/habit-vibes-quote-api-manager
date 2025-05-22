@@ -23,5 +23,7 @@ rootProject.name = "HabitVibesQuoteApiManager"
 
 include(":app")
 include(":compose:ui-theme")
-include(":navigation")
 include(":core:di")
+include(":core:resources")
+include(":feature:home")
+include(":navigation")
