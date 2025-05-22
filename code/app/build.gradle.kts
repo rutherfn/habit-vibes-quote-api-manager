@@ -48,8 +48,8 @@ android {
 
 dependencies {
 
+    api(project(path = ":core:di"))
     api(project(path = ":compose:ui-theme"))
-    api(project(path = ":navigation"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -74,8 +74,4 @@ dependencies {
 
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-    implementation(libs.koin.android)
-    implementation(libs.koin.androidx.compose)
-    implementation(libs.koin.core)
 }

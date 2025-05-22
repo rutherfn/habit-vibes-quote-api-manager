@@ -8,6 +8,7 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 ./DS_STORE
+/core/di/build
 /compose/ui-theme/build
 /navigation/build
 /build

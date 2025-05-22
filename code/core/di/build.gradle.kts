@@ -1,15 +1,15 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ktlint)
 }
+
 ktlint {
     disabledRules.set(setOf("function-naming", "property-naming"))
 }
 
 android {
-    namespace = "com.nicholas.rutherford.habit.vibes.quote.api.manager.compose.ui.theme"
+    namespace = "com.nicholas.rutherford.habit.vibes.quote.api.manager.core.di"
     compileSdk = 35
 
     defaultConfig {
@@ -35,13 +35,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    buildFeatures {
-        compose = true
-    }
 }
 
 dependencies {
+    api(project(path = ":navigation"))
 
-    implementation(libs.androidx.material3)
-    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.core)
 }
