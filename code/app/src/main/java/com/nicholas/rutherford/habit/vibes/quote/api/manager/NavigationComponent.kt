@@ -39,7 +39,7 @@ fun NavigationComponent(navigator: Navigator) {
 
     val alertInfoState by navigator.alertInfoActions.asLifecycleAwareState(
         lifecycleOwner = lifecycleOwner,
-        initialState = null,
+        initialState = null
     )
 
     var alertInfo: AlertInfo? by remember { mutableStateOf(value = null) }
@@ -53,19 +53,22 @@ fun NavigationComponent(navigator: Navigator) {
     Scaffold(
         bottomBar = { BottomNavigationBar(navController = navController) }
     ) { paddingValues ->
-        AppNavHost(navController = navController, modifier = Modifier.padding(paddingValues).background(MaterialTheme.colorScheme.background))
+        AppNavHost(
+            navController = navController,
+            modifier = Modifier.padding(paddingValues).background(MaterialTheme.colorScheme.background)
+        )
     }
 }
 
 @Composable
 fun AppNavHost(
     navController: NavHostController,
-    modifier: Modifier = Modifier,
+    modifier: Modifier = Modifier
 ) {
     NavHost(
         navController = navController,
         startDestination = Screen.Home.route,
-        modifier = modifier,
+        modifier = modifier
     ) {
         composable(Screen.Home.route) { HomeScreenTest() }
         composable(Screen.Settings.route) { SettingsScreenTest() }

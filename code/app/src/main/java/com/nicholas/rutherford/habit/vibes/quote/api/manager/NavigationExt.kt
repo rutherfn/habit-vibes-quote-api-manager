@@ -12,14 +12,14 @@ import kotlinx.coroutines.flow.Flow
 @Composable
 fun <T> Flow<T>.asLifecycleAwareState(
     lifecycleOwner: LifecycleOwner,
-    initialState: T,
+    initialState: T
 ) = lifecycleAwareState(lifecycleOwner, this, initialState)
 
 @Composable
 internal fun <T> lifecycleAwareState(
     lifecycleOwner: LifecycleOwner,
     flow: Flow<T>,
-    initialState: T,
+    initialState: T
 ): State<T> {
     val lifecycleAwareStateFlow =
         remember(flow, lifecycleOwner) {

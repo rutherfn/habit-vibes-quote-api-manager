@@ -7,7 +7,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
-import androidx.compose.material3.NavigationBarItemColors
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -32,27 +31,32 @@ fun BottomNavigationBar(navController: NavHostController) {
             val isSelected = selectedItem == index
 
             NavigationBarItem(
-                icon = { Icon(
-                    icons[index],
-                    contentDescription = item.route,
-                    tint = if (isSelected) {
-                        MaterialTheme.colorScheme.primary
-                    } else {
-                        MaterialTheme.colorScheme.secondary
-                    }
-                ) },
+                icon = {
+                    Icon(
+                        icons[index],
+                        contentDescription = item.route,
+                        tint =
+                        if (isSelected) {
+                            MaterialTheme.colorScheme.primary
+                        } else {
+                            MaterialTheme.colorScheme.secondary
+                        }
+                    )
+                },
                 label = {
                     Text(
-                        text = item.route.replaceFirstChar {
+                        text =
+                        item.route.replaceFirstChar {
                             if (it.isLowerCase()) {
                                 it.titlecase(
-                                    Locale.ROOT,
+                                    Locale.ROOT
                                 )
                             } else {
                                 it.toString()
                             }
                         },
-                        color = if (isSelected) {
+                        color =
+                        if (isSelected) {
                             MaterialTheme.colorScheme.primary
                         } else {
                             MaterialTheme.colorScheme.secondary
