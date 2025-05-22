@@ -1,4 +1,4 @@
-package com.nicholas.rutherford.habit.vibes.quote.api.manager
+package com.nicholas.rutherford.habit.vibes.quote.api.manager.navigation
 
 import kotlinx.coroutines.flow.StateFlow
 

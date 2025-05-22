@@ -1,4 +1,4 @@
-package com.nicholas.rutherford.habit.vibes.quote.api.manager
+package com.nicholas.rutherford.habit.vibes.quote.api.manager.navigation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -21,18 +21,6 @@ import androidx.navigation.compose.rememberNavController
 import androidx.lifecycle.compose.LocalLifecycleOwner as lifecycleOwner
 
 @Composable
-fun HomeScreenTest() {
-    Text(text = "Home Screen Content")
-}
-
-@Composable
-fun SettingsScreenTest() {
-    Column(modifier = Modifier.fillMaxSize()) {
-        // This will fill the whole screen
-    }
-}
-
-@Composable
 fun NavigationComponent(navigator: Navigator) {
     val navController = rememberNavController()
     val lifecycleOwner = lifecycleOwner.current
@@ -53,25 +41,9 @@ fun NavigationComponent(navigator: Navigator) {
     Scaffold(
         bottomBar = { BottomNavigationBar(navController = navController) }
     ) { paddingValues ->
-        AppNavHost(
+        NavHost(
             navController = navController,
             modifier = Modifier.padding(paddingValues).background(MaterialTheme.colorScheme.background)
         )
-    }
-}
-
-@Composable
-fun AppNavHost(
-    navController: NavHostController,
-    modifier: Modifier = Modifier
-) {
-    NavHost(
-        navController = navController,
-        startDestination = Screen.Home.route,
-        modifier = modifier
-    ) {
-        composable(Screen.Home.route) { HomeScreenTest() }
-        composable(Screen.Settings.route) { SettingsScreenTest() }
-        // Add other composable destinations here
     }
 }

@@ -1,6 +1,8 @@
 package com.nicholas.rutherford.habit.vibes.quote.api.manager
 
 import android.app.Application
+import com.nicholas.rutherford.habit.vibes.quote.api.manager.navigation.Navigator
+import com.nicholas.rutherford.habit.vibes.quote.api.manager.navigation.NavigatorImpl
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.dsl.module

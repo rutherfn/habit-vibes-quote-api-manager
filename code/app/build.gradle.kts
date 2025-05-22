@@ -49,6 +49,7 @@ android {
 dependencies {
 
     api(project(path = ":compose:ui-theme"))
+    api(project(path = ":navigation"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

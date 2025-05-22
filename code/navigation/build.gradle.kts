@@ -4,13 +4,13 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ktlint)
 }
+
 ktlint {
     disabledRules.set(setOf("function-naming", "property-naming"))
 }
 
-
 android {
-    namespace = "com.nicholas.rutherford.habit.vibes.quote.api.manager.compose.ui.theme"
+    namespace = "com.nicholas.rutherford.habit.vibes.quote.api.manager.navigation"
     compileSdk = 35
 
     defaultConfig {
@@ -43,6 +43,8 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.material3)
     implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.ui.tooling.preview)
 }

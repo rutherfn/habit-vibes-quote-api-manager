@@ -9,6 +9,7 @@
 /.idea/assetWizardSettings.xml
 ./DS_STORE
 /compose/ui-theme/build
+/navigation/build
 /build
 /captures
 .externalNativeBuild

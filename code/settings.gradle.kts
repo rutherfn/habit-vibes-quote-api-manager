@@ -20,5 +20,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "HabitVibesQuoteApiManager"
+
 include(":app")
 include(":compose:ui-theme")
+include(":navigation")

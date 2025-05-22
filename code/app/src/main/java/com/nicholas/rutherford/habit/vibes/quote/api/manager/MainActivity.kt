@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.nicholas.rutherford.habit.vibes.quote.api.manager.compose.ui.theme.AppTheme
+import com.nicholas.rutherford.habit.vibes.quote.api.manager.navigation.NavigationComponent
 import org.koin.android.ext.android.get
 
 class MainActivity : ComponentActivity() {
