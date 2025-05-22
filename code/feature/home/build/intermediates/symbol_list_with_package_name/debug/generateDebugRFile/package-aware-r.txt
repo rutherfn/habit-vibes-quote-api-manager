@@ -1,1 +1,0 @@
-com.nicholas.rutherford.habit.vibes.quote.api.manager.feature.home

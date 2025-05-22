@@ -11,6 +11,7 @@
 /core/di/build
 /core/resources/build
 /compose/ui-theme/build
+/feature/home/build
 /navigation/build
 /build
 /captures
