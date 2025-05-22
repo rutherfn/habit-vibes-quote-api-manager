@@ -1,6 +1,10 @@
 package com.nicholas.rutherford.habit.vibes.quote.api.manager
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -23,7 +27,9 @@ fun HomeScreenTest() {
 
 @Composable
 fun SettingsScreenTest() {
-    Text(text = "Settings Screen Content")
+    Column(modifier = Modifier.fillMaxSize()) {
+        // This will fill the whole screen
+    }
 }
 
 @Composable
@@ -45,9 +51,9 @@ fun NavigationComponent(navigator: Navigator) {
     }
 
     Scaffold(
-        bottomBar = { BottomNavigationBar(navController = navController) },
+        bottomBar = { BottomNavigationBar(navController = navController) }
     ) { paddingValues ->
-        AppNavHost(navController = navController, modifier = Modifier.padding(paddingValues))
+        AppNavHost(navController = navController, modifier = Modifier.padding(paddingValues).background(MaterialTheme.colorScheme.background))
     }
 }
 

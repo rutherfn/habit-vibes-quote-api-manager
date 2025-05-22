@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("org.jlleitschuh.gradle.ktlint") version "12.2.0"
 }
 
 android {
@@ -56,7 +57,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("androidx.navigation:navigation-compose:2.9.0")
+    implementation(libs.androidx.navigation.compose)
 
     implementation("io.insert-koin:koin-androidx-compose:3.4.5")
     implementation("io.insert-koin:koin-android:3.4.1")

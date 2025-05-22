@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.nicholas.rutherford.habit.vibes.quote.api.manager.ui.theme.HabitVibesQuoteApiManagerTheme
+import com.nicholas.rutherford.habit.vibes.quote.api.manager.ui.theme.AppTheme
 import org.koin.android.ext.android.get
 
 class MainActivity : ComponentActivity() {
@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            HabitVibesQuoteApiManagerTheme {
+            AppTheme {
                 NavigationComponent(navigator = get())
             }
         }

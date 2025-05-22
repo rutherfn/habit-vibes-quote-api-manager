@@ -4,8 +4,10 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemColors
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -23,13 +25,25 @@ fun BottomNavigationBar(navController: NavHostController) {
     val items = listOf(Screen.Home, Screen.Settings)
     val icons = listOf(Icons.Filled.Home, Icons.Filled.Settings)
 
-    NavigationBar {
+    NavigationBar(
+        containerColor = MaterialTheme.colorScheme.surfaceVariant
+    ) {
         items.forEachIndexed { index, item ->
+            val isSelected = selectedItem == index
+
             NavigationBarItem(
-                icon = { Icon(icons[index], contentDescription = item.route) },
+                icon = { Icon(
+                    icons[index],
+                    contentDescription = item.route,
+                    tint = if (isSelected) {
+                        MaterialTheme.colorScheme.primary
+                    } else {
+                        MaterialTheme.colorScheme.secondary
+                    }
+                ) },
                 label = {
                     Text(
-                        item.route.replaceFirstChar {
+                        text = item.route.replaceFirstChar {
                             if (it.isLowerCase()) {
                                 it.titlecase(
                                     Locale.ROOT,
@@ -38,6 +52,11 @@ fun BottomNavigationBar(navController: NavHostController) {
                                 it.toString()
                             }
                         },
+                        color = if (isSelected) {
+                            MaterialTheme.colorScheme.primary
+                        } else {
+                            MaterialTheme.colorScheme.secondary
+                        }
                     )
                 },
                 selected = selectedItem == index,
@@ -50,7 +69,7 @@ fun BottomNavigationBar(navController: NavHostController) {
                         launchSingleTop = true
                         restoreState = true
                     }
-                },
+                }
             )
         }
     }
