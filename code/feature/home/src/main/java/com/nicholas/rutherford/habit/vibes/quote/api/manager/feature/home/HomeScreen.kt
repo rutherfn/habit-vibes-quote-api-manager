@@ -74,7 +74,7 @@ fun HomeScreen(params: HomeScreenParams) {
                         .fillMaxWidth()
                         .height(56.dp),
                     colors = CardDefaults.cardColors(
-                        containerColor = MaterialTheme.colorScheme.surface,
+                        containerColor = MaterialTheme.colorScheme.surface
                     ),
                     shape = RoundedCornerShape(16.dp),
                     elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
@@ -112,13 +112,12 @@ fun HomeScreen(params: HomeScreenParams) {
     }
 }
 
-
 @Preview
 @Composable
 fun Test() {
     val items = mapOf(
         "Delete" to listOf(
-            HomeItem("Delete a Quote", "Delete",  Icons.Default.Delete),
+            HomeItem("Delete a Quote", "Delete", Icons.Default.Delete),
             HomeItem("Delete a Pending Quote", "Delete", Icons.Default.Delete)
         ),
         "Fetch" to listOf(

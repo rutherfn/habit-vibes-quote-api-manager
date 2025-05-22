@@ -34,16 +34,16 @@ fun BottomNavigationBar(
 
             NavigationBarItem(
                 icon = {
-                        Icon(
-                            icons[index],
-                            contentDescription = item.route,
-                            tint =
-                                if (isSelected) {
-                                    MaterialTheme.colorScheme.primary
-                                } else {
-                                    MaterialTheme.colorScheme.secondary
-                                }
-                        )
+                    Icon(
+                        icons[index],
+                        contentDescription = item.route,
+                        tint =
+                        if (isSelected) {
+                            MaterialTheme.colorScheme.primary
+                        } else {
+                            MaterialTheme.colorScheme.secondary
+                        }
+                    )
                 },
                 label = {
                     Text(
