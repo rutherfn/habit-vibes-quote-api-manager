@@ -114,7 +114,7 @@ fun HomeScreen(params: HomeScreenParams) {
 
 @Preview
 @Composable
-fun Test() {
+fun HomeScreenPreview() {
     val items = mapOf(
         "Delete" to listOf(
             HomeItem("Delete a Quote", "Delete", Icons.Default.Delete),
