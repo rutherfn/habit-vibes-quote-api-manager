@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="choose_a_action_to_manage_your_quotes">Choose an action to manage your quotes.</string>
+    <string name="delete">Delete</string>
+    <string name="delete_a_pending_quote">Delete A Pending Quote</string>
+    <string name="delete_a_quote">Delete A Quote</string>
+    <string name="delete_category">🗑️ Delete</string>
+    <string name="fetch">Fetch</string>
+    <string name="fetch_a_random_quote">Fetch A Random Quote</string>
+    <string name="fetch_all_pending_quotes">Fetch All Pending Quotes</string>
+    <string name="fetch_all_quotes">Fetch All Quotes</string>
+    <string name="fetch_category">🔄 Fetch</string>
+    <string name="fetch_pending_quote_by_title">Fetch Pending Quote By Title</string>
+    <string name="fetch_quote_by_title">Fetch Quote By Title</string>
+    <string name="habit_vibes_quote_manager">Habit Vibes Quote Manager</string>
+    <string name="other_category">📦 Other</string>
+    <string name="post">Post</string>
+    <string name="post_category">✍️ Post</string>
+    <string name="post_multiple_pending_quotes">Post Multiple Pending Quotes</string>
+    <string name="post_multiple_quotes">Post Multiple Quotes</string>
+    <string name="post_one_pending_quote">Post One Pending Quote</string>
+    <string name="post_one_quote">Post One Quote</string>
+    <string name="promote_a_pending_quote">Promote A Pending Quote</string>
+</resources>
