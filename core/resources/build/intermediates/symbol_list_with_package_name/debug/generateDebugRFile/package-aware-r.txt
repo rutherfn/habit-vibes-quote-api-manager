@@ -1,0 +1,22 @@
+com.nicholas.rutherford.habit.vibes.quote.api.manager.core.resources
+string choose_a_action_to_manage_your_quotes
+string delete
+string delete_a_pending_quote
+string delete_a_quote
+string delete_category
+string fetch
+string fetch_a_random_quote
+string fetch_all_pending_quotes
+string fetch_all_quotes
+string fetch_category
+string fetch_pending_quote_by_title
+string fetch_quote_by_title
+string habit_vibes_quote_manager
+string other_category
+string post
+string post_category
+string post_multiple_pending_quotes
+string post_multiple_quotes
+string post_one_pending_quote
+string post_one_quote
+string promote_a_pending_quote
